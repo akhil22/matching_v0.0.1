@@ -1,7 +1,7 @@
---source_image=/home/akhil/Desktop/visual_odom/seq_1/left_rijvi_match/1171.jpg
---source_key=/home/akhil/Desktop/visual_odom/seq_1/left_rijvi_keys/1171_1169.key
---source_dimension=1241x376
---target_image=/home/akhil/Desktop/visual_odom/seq_1/left_rijvi_match/1172.jpg
---target_key=/home/akhil/Desktop/visual_odom/seq_1/left_rijvi_keys/1172_1169.key
---target_dimension=1241x376
---result_path=/home/akhil/Desktop/visual_odom/seq_1/left_rijvi_match_keys/1171.txt
+--source_image=/home/akhil/visual_odom/seq_0/right_rijvi_match/128.jpg
+--source_key=/home/akhil/visual_odom/seq_0/right_rijvi_keys/128_126.key
+--source_dimension=1242x375
+--target_image=/home/akhil/visual_odom/seq_0/right_rijvi_match/129.jpg
+--target_key=/home/akhil/visual_odom/seq_0/right_rijvi_keys/129_126.key
+--target_dimension=
+--result_path=/home/akhil/visual_odom/seq_0/right_rijvi_match_keys/128.txt

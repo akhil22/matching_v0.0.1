@@ -1,6 +1,7 @@
 #!/bin/bash
-search_folder="/home/akhil/visual_odom/seq_0/right_rijvi_match/*"
-folder="/home/akhil/visual_odom/seq_0/right_rijvi_match"
+BINPATH=../bin/KeyMatchGeometryAware
+search_folder="/home/akhil/visual_odom/seq_0/rijvi_list_keys/*"
+folder="/home/akhil/visual_odom/seq_0/rijvi_list_keys"
 images=()
 j=0;
 for i in $search_folder
@@ -18,14 +19,16 @@ i2=$(expr $i + "4")
 b="/home/akhil/right_rijvi_match_features/$k.txt"
 im1="$folder/$i1.jpg"
 im2="$folder/$i2.jpg"
+keyfile="/home/akhil/visual_odom/seq_0/rijvi_list_keys/$k.txt"
+dimfile="/home/akhil/visual_odom/seq_0/dims.init.txt"
 key1="/home/akhil/visual_odom/seq_0/right_rijvi_keys/$i1"_"$k.key"
 key2="/home/akhil/visual_odom/seq_0/right_rijvi_keys/$i2"_"$k.key"
-result="/home/akhil/visual_odom/seq_0/right_rijvi_match_keys/$i1.txt"
+result="/home/akhil/visual_odom/seq_0/rijvi_tracks/$i1.txt"
 echo $im1
 echo $im2
 echo $key1
 echo $key2
-./RunPairwise.sh $im1 $im2 $key1 $key2 $result
+$BINPATH --keyfile_list=$keyfile --image_dimension_list=/home/akhil/visual_odom/seq_0/dims.init.txt --matches_file=$result 
 done
 
 

@@ -16,8 +16,8 @@ IMAGE2=$2
 RESULT=$5
 key_file1=$3
 key_file2=$4
-BINPATH=../bin/match_pairs
-SIFT=../bin/sift
+BINPATH=/home/akhil/matching_v0.0.1/bin/match_pairs
+SIFT=/home/akhil/matching_v0.0.1/bin/sift
 
 pgm_file=`echo $IMAGE1 | sed 's/jpg$/pgm/'`
 key_file=`echo $IMAGE1 | sed 's/jpg$/key/'`
